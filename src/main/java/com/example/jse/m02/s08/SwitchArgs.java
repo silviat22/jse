@@ -16,10 +16,10 @@ public class SwitchArgs {
      * @param args determine the switch execution
      */
     public static void main(String[] args) {
-        switch (args.length) {
+        switch (args.length) { //sottointendo il confronto per ogni case ==)
         case 0:
             System.out.println("No argument passed in");
-            break;
+            break; //a causa del break, se la condizione è verificata, salta alla fine "done"
         case 1:
             System.out.println("The only argument passed is: " + args[0]);
             break;

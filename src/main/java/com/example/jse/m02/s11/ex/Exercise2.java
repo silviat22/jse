@@ -14,7 +14,7 @@ public class Exercise2 {
     /**
      * Swap the values in the defined flags array two times, and print it each time:
      * <li>By while loop
-     * <li>By do-while loop
+     * <li>By do-while loop almeno un elemento
      * 
      * @param args not used
      */
@@ -22,6 +22,26 @@ public class Exercise2 {
         boolean[] flags = { true, false, false };
         System.out.println(Arrays.toString(flags));
 
-        // TODO
+        int i = 0;
+        while (i < flags.length) {
+            if (flags[i] == true) {
+                flags[i] = false;
+            } else {
+                flags[i] = true;
+            }
+            i++;
+        }
+        System.out.println(Arrays.toString(flags));
+
+        i = 0;
+
+        do {
+            if (flags[i] == true) {
+                flags[i] = false;
+            } else {
+                flags[i] = true;
+            }
+            i++;
+        } while (i < flags.length);
     }
 }

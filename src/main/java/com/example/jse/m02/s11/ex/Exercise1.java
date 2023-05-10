@@ -5,6 +5,8 @@
  */
 package com.example.jse.m02.s11.ex;
 
+import java.util.Arrays;
+
 /**
  * Control flow - Loop: while / do-while
  */
@@ -17,6 +19,17 @@ public class Exercise1 {
      * @param args not used
      */
     public static void main(String[] args) {
-        // TODO
+        int i = 0;
+        while (i < 10) {
+            System.out.println(i);
+            i++;
+        }
+        System.out.println("****");
+        do {
+            System.out.println(i);
+            i++;
+        } while (i < 10);
     }
 }
+
+    

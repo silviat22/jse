@@ -21,9 +21,9 @@ public class Ternary {
         // Not nice: split declaration from conditional initialization
         String version2;
         if (args.length == 0) {
-            version2 = "No arg passed";
+            version2 = "No arg passed"; // version2 viene nizializzato a "No..." SE (if...)
         } else {
-            version2 = args[0];
+            version2 = args[0]; //altrimenti il version2 ha un reference al PRIMO argomento [0]
         }
         System.out.println(version2);
 

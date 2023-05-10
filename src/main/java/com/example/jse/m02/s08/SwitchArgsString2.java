@@ -8,7 +8,7 @@ package com.example.jse.m02.s08;
 /**
  * Control flow - Decision: switch on String
  */
-public class SwitchArgsString {
+public class SwitchArgsString2 {
     /**
      * Accordingly to the argument, a different feedback is generated
      * 
@@ -17,19 +17,15 @@ public class SwitchArgsString {
     public static void main(String[] args) {
         if (args.length == 0) {
             System.out.println("Please, pass me a string!");
-            return; //si sarebbe potuto scrivere else per continuare il codice
+            return; // si sarebbe potuto scrivere else per continuare il codice
         }
 
-        switch (args[0]) {
-        case "ciao":
+        if (args[0].equals("ciao")) {
             System.out.println("Hello to you!");
-            break;
-        case "Tom":
+        } else if (args[0].equals("Tom")) {
             System.out.println("Welcome back, Tom!");
-            break;
-        default:
+        } else {
             System.out.println("I don't understand");
-            break;
         }
 
         System.out.println("Bye");

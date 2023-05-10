@@ -20,6 +20,15 @@ public class Exercise2 {
         boolean[] flags = { true, false, false };
         System.out.println(Arrays.toString(flags));
 
-        // TODO
+        for (int i = 0; i < flags.length; i++) {
+            // flags[i] = !flags[i];
+            // if (flags[i] == true { si definisce la variabile flags booleana
+            if (flags[i]) {
+                flags[i] = false;
+            } else {
+                flags[i] = true;
+            }
+        }
+        System.out.println(Arrays.toString(flags));
     }
 }

@@ -20,8 +20,13 @@ public class Exercise {
      * @return uppercase version of input
      */
     public String toUpper(String s) {
-        // TODO: create an uppercase version of the input and return it
-        throw new UnsupportedOperationException("Not yet implemented");
+
+        StringBuilder temp = new StringBuilder(s);
+        
+
+        String result = temp.toString();
+        return result;
+
     }
 
     /**

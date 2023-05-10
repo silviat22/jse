@@ -20,7 +20,13 @@ public class Exercise5 {
 
         int multi = a * b;
         System.out.println("a * b = " + multi);
-        // TODO (1) Get the same result without multiplying
+        int prod = 0;
+        int i = 0;
+        while (i < b) {
+            prod = prod + a; // prod += a;
+            i++;
+        }
+        System.out.println("a * b = " + prod);
 
         int div = a / b;
         System.out.println("a / b = " + div);

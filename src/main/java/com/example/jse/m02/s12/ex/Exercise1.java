@@ -15,6 +15,8 @@ public class Exercise1 {
      * @param args not used
      */
     public static void main(String[] args) {
-        // TODO
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
     }
 }

@@ -21,6 +21,7 @@ public class ArrayShortcut {
 
         // !!! be careful with indices !!!
 //        data[data.length] = 21; // WRONG! exception!
+        // ERRORE, MANCA IL - 1 data[data.length] = 21;
         data[data.length - 1] = 21;
 
         System.out.print("The last element is ");

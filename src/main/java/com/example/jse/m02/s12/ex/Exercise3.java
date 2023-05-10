@@ -15,6 +15,11 @@ public class Exercise3 {
      * @param args each argument is going to be printed
      */
     public static void main(String[] args) {
-        // TODO
+        for (int i = 0; i < args.length; i++) {
+            System.out.println(args[i]);
+        }
+        for (String cur : args) {
+            System.out.println(cur);
+        }
     }
 }
