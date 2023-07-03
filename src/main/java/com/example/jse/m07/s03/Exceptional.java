@@ -17,14 +17,14 @@ public class Exceptional implements AutoCloseable {
     }
 
     @Override
-    public void close() {
+    public void close() { // arriva da AutoClosable
         System.out.println("Object cleanup");
     }
 
     /**
      * A checked exception thrower
      * 
-     * @throws Exception
+     * @throws Exception solitamente va specificato il perchè dell'eccezione
      */
     public void aCheckedThrower() throws Exception {
         // ...
@@ -65,4 +65,6 @@ public class Exceptional implements AutoCloseable {
     private boolean somethingUnexpected() {
         return true;
     }
+
+  
 }

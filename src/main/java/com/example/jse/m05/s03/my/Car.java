@@ -10,7 +10,7 @@ public class Car {
         this.model = model;
     }
 
-@Override //ridefinire un metodo
+    @Override // ridefinire un metodo
     public String toString() {
         return "Car [brand = " + brand + ", model = " + model + "]";
     }

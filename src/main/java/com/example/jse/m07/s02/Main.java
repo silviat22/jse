@@ -14,10 +14,10 @@ public class Main {
 
         // The error code idiom
         // 1. call the method that could fail
-        double input = -15.3;
+        double input = -15.3; //primitivo
         double result = Math.sqrt(input);
         // 2. check the result
-        if (Double.isNaN(result)) {
+        if (Double.isNaN(result)) { //NotaNumber costante=non è un numero, pur essendo un primitivo è un errore
             // 2a. Error code detected, signal the problem
             System.out.println("Bad input: " + input);
         } else {
@@ -25,7 +25,7 @@ public class Main {
             System.out.println("Square root is " + result);
         }
 
-        // ... but what if there is no check?
+        // ... but what if there is no check? 
         System.out.println("Result is " + result);
 
         // in case of exception, if the caller do not take any further step, the program

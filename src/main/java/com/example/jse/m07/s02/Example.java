@@ -20,6 +20,13 @@ public class Example {
      * @param args not used
      */
     public static void main(String[] args) {
+        try {
+            int x = max(null); // abbiamo applicato il metodo max(vedi sotto) a una nuova variabile x
+            System.out.println(x);
+        } catch (Exception ex) {
+         ex.printStackTrace(); // stampa da dove inizia la gestione fin dove finisce //System.out.println(ex);
+            return;
+        }
         withoutException();
 
         // The try-catch construct
@@ -111,7 +118,7 @@ public class Example {
      * @return the doubled input value
      * @throws IllegalArgumentException when negative input passed
      */
-    public static double by2ExUnchecked(double value) {
+    public static double by2ExUnchecked(double value) { // non obbligato a fare il try-catch
         if (value < 0) {
             throw new IllegalArgumentException("Value should not be negative: " + value);
         }
@@ -126,11 +133,25 @@ public class Example {
      * @return the doubled input value
      * @throws Exception when negative input passed
      */
-    public static double by2ExChecked(double value) throws Exception {
+    public static double by2ExChecked(double value) throws Exception { // throws Exception obbligatorio nel caso di
+                                                                       // Checked
         if (value < 0) {
             throw new Exception("Value should not be negative: " + value);
         }
 
         return value * 2;
+    }
+
+    public static int max(int[] input) { // ESERCIZIO: massimo in un array
+        if (input == null || input.length == 0) {
+            throw new IllegalArgumentException("Bla bla");
+        }
+        int result = input[0];
+        for (int i = 1; i < input.length; i++) {
+            if (input[i] > result) {
+                result = input[i];
+            }
+        }
+        return result;
     }
 }

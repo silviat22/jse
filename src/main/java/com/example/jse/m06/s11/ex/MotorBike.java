@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 /**
  * TODO: MotorBike is-a Vehicle
  */
-public class MotorBike {
+public class MotorBike extends Vehicle {
     private static final Logger log = Logger.getGlobal();
 
     /**
@@ -18,5 +18,21 @@ public class MotorBike {
      */
     public MotorBike() {
         log.info("MotorBike created");
+    }
+
+    @Override
+    public String toString() {
+        return "a motorBike";
+    }
+
+    @Override
+    public void steer(boolean right) {
+        String direction;
+        if (right) {
+            direction = "right";
+        } else {
+            direction = "left";
+        }
+        log.info("The motorBike steers " + direction);
     }
 }

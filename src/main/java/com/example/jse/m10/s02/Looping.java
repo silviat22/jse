@@ -27,7 +27,7 @@ public class Looping {
         System.out.println();
 
         System.out.print("Java 8 forEach(): ");
-        iterable.forEach(value -> System.out.print(value + " "));
+        iterable.forEach(value -> System.out.print(value + " ")); //a sx parametro(value), a dx quello che voglio ch ìe venga eseguito
         System.out.println();
     }
 }

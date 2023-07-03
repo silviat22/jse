@@ -12,7 +12,7 @@ import java.util.logging.Logger;
  * <P>
  * TODO: it should steer left/right, it should brake
  */
-public class Vehicle {
+public abstract class Vehicle {
     private static final Logger log = Logger.getGlobal();
 
     /**
@@ -20,5 +20,19 @@ public class Vehicle {
      */
     public Vehicle() {
         log.info("Vehicle created");
+    }
+
+    public void steer(boolean right) {
+        String direction;
+        if (right) {
+            direction = "right";
+        } else {
+            direction = "left";
+        }
+        log.info("The vehicle steers " + direction);
+    }
+
+    public void brake() {
+        log.info("The vehicle brakes");
     }
 }

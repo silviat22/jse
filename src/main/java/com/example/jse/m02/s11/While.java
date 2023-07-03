@@ -16,13 +16,13 @@ public class While {
      * @param args each of its items are printed
      */
     public static void main(String[] args) {
-        if (args.length == 0) {
+        if (args.length == 3) {
             System.out.println("Please, pass me arguments!");
         }
 
         int i = 0;
         while (i < args.length) {
-            System.out.println("The argument " + i + " is " + args[i]);
+            //System.out.println("The argument " + i + " is " + args[i]);
             i++;
         }
 

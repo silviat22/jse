@@ -16,7 +16,7 @@ public abstract class Pet implements Brushable {
      * 
      * @param name the pet name
      */
-    protected Pet(String name) {
+    protected Pet(String name) { //inizializza il nome prendendo quello che viene passato su
         this.name = name;
     }
 
@@ -37,5 +37,5 @@ public abstract class Pet implements Brushable {
     /**
      * The specific noise for a pet. Each pet should have its own
      */
-    public abstract void makeNoise();
+    public abstract void makeNoise(); //metodo astratto, non è definito, non ha sequenza di istruzioni
 }

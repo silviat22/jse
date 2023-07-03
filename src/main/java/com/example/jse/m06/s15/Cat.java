@@ -8,7 +8,7 @@ package com.example.jse.m06.s15;
 /**
  * Cat is a Pet
  */
-public class Cat extends Pet {
+public class Cat extends Pet { //(indirettamente implementa brushable)
     /**
      * Canonical constructor
      * 
@@ -21,7 +21,7 @@ public class Cat extends Pet {
     /**
      * Cat noise
      */
-    public void meow() {
+    public void meow() { //metodo specifico per i gatti Cat (nel pet non era definito)
         System.out.println("meow!");
     }
 

@@ -20,6 +20,10 @@ public class Dog {
         this.name = name;
     }
 
+    public void bark() {
+        System.out.println("Dog barks");
+    }
+
     @Override
     public String toString() {
         return "Dog [name=" + name + "]";

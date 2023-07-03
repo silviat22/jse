@@ -25,6 +25,15 @@ public class Poodle extends Dog {
     }
 
     @Override
+    public void bark() {
+        super.bark();
+        System.out.println("Poodle barks");
+        // sono nell'ogg corrente, voglio eseguire bark ma a livello della classe madre
+        // Dog
+
+    }
+
+    @Override
     public String toString() {
         return "Poodle [owner=" + owner + ", " + super.toString() + "]";
     }

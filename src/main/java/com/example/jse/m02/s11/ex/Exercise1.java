@@ -5,8 +5,6 @@
  */
 package com.example.jse.m02.s11.ex;
 
-import java.util.Arrays;
-
 /**
  * Control flow - Loop: while / do-while
  */

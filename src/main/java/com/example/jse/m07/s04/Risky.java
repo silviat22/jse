@@ -44,7 +44,7 @@ public class Risky {
      * 
      * @throws Exception thrown by Exceptional::aCheckedThrower()
      */
-    public void notACatcher() throws Exception {
+    public void notACatcher() throws Exception { //invoca aCheckedThrower ma non fa try-catch per cui ci pensi chi mi ha chiamato
         Exceptional exceptional = new Exceptional();
 
         // ...
@@ -80,11 +80,11 @@ public class Risky {
         // try-finally, the exception is not caught!
         try {
             exceptional.aCheckedThrower();
-        } finally {
+        } finally { //non c'è catch, quindi l'eccezionbe non viene gestita, il programma terminerà
             System.out.println("done call to Exceptional.aCheckedThrower()");
             exceptional.close();
         }
 
-        log.info("This statement won't be reached");
+        log.info("This statement won't be reached"); //non viene eseguito per il finally che fa terminare tutto
     }
 }

@@ -29,7 +29,7 @@ public class Iterating {
         // Each concrete collection has a nice toString() override
         System.out.println("The iterable: " + iterable);
 
-        // remove even values
+        // remove even values //si rimuove il reference
         Iterator<Integer> it = iterable.iterator();
         while (it.hasNext()) {
             Integer current = it.next();
